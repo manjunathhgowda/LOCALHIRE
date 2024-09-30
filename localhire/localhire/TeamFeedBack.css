@@ -1,0 +1,51 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.us {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('images/nammanna don.jpg');
+    background-size: cover;
+    /*background: url(images/contactimage.jpg);*/
+    background-size: cover;
+}
+.us .content {
+    max-width: 880px;
+    text-align: center;
+}
+    .us .content {
+        text-align: left;
+    }
+
+/* Hide the radio buttons */
+#ratingList input[type="radio"] 
+{
+    display: none;
+}
+
+/* Style the labels as stars */
+#ratingList label 
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('images/star-empty.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* Style the selected star */
+#ratingList input[type="radio"]:checked + label 
+{
+    background-image: url('images/star-outline-filled.png');
+}
+

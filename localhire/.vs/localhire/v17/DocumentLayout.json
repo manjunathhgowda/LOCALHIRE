@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Labourhire\\localhire\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C4A4974-63D2-4C05-AA41-4966AAF9049F}|localhire\\localhire.csproj|c:\\labourhire\\localhire\\localhire\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{6C4A4974-63D2-4C05-AA41-4966AAF9049F}|localhire\\localhire.csproj|solutionrelative:localhire\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Labourhire\\localhire\\localhire\\README.md",
+              "RelativeDocumentMoniker": "localhire\\README.md",
+              "ToolTip": "C:\\Labourhire\\localhire\\localhire\\README.md",
+              "RelativeToolTip": "localhire\\README.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-09-30T11:09:51.301Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
