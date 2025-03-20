@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WORKERDASHBOARD.master.cs" Inherits="localhire.WORKERDASHBOARD" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>WORKER DASHBOARD</title>
+   <%-- BOOTSTRAP CSS--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%-- FOOTER CSS--%>
+    <link href="footer.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg ">
+        <a class="navbar-brand">
+            
+           <img  id="logo" src="images/kai%20logo.png" width="30" height="30" />
+           <b>LocalHire</b>
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <asp:Image ID="logo2" class="img-thumbnail rounded-circle" runat="server" Width="35" Height="35" ImageUrl="images/user%20profile%20icon.png"/>        
+                &nbsp; 
+        <asp:Label ID="Label1" runat="server" Text="username"></asp:Label>       
+        </ul>
+        </nav>
+            <hr />
+        </div>
+        <div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <asp:Panel ID="Panel1" runat="server">
+            <div class="card" style ="width:16rem;"> 
+                    <div class="card-body"> 
+                        <div class="row"> 
+                                 <div class="col"> 
+                                      <center> 
+                                          <asp:Image ID="logo3" class="img-thumbnail rounded-circle" runat="server" width="100" height="100" ImageUrl="images/user%20profile%20icon.png"/>
+                                      </center> 
+                                 </div> 
+                         </div>
+                        
+                        <div class="row"> 
+                                 <div class="col"> 
+                                      <center> 
+                                          <b><asp:Label ID="username" runat="server" Text="username"></asp:Label></b>
+                                      </center> 
+                                 </div> 
+                         </div>
+                        <div class="row"> 
+                                 <div class="col"> 
+                                      <center>
+                                          
+                                          <asp:Label ID="usertype" runat="server" Text="Worker ID:"></asp:Label><asp:Label id="workerid" runat="server" Text="id"></asp:Label>
+                                      </center> 
+                                 </div> 
+                         </div>
+                        &nbsp;
+                        <div class="row"> 
+                                 <div class="col"> 
+                                      <center> 
+                                          <asp:Button ID="edit" class="btn btn-secondary" runat="server" Text="Edit Profile" OnClick="edit_Click"></asp:Button>                          
+                                 </div> 
+                        </div>
+
+                        <div class="row"> 
+                                 <div class="col"> 
+                                      <center> 
+                                          <hr />
+                                      </center> 
+                                 </div> 
+                         </div>
+
+                        <asp:Button ID="btnhome" class="btn btn-info btn-block" runat="server" Text="Home" OnClick="btnhome_Click" />&nbsp;
+                        <asp:Button ID="btnmyorder" class="btn btn-info btn-block" runat="server" Text="My Orders" OnClick="btnmyorder_Click" /> &nbsp;       
+                        <asp:Button ID="btnwallet" class="btn btn-info btn-block" runat="server" Text="My Wallet" OnClick="btnwallet_Click" />&nbsp;
+                        <asp:Button ID="btnbank" class="btn btn-info btn-block" runat="server" Text="My Bank" OnClick="btnbank_Click"/>&nbsp;
+                        <asp:Button ID="btnfeedback" class="btn btn-info btn-block" runat="server" Text="View Feedbacks" OnClick="btnfeedback_Click"/>&nbsp;
+                       <asp:Button ID="btnlogout" class="btn btn-info btn-block" runat="server" Text="Logout" ForeColor="#FF3300" Font-Bold="True" OnClientClick="return confirm('Are you sure you want to logout?')" OnClick="btnlogout_Click" />
+                 </div> 
+            </div> 
+            </asp:Panel>
+      </div> 
+
+        <div class="col-9">
+           <div class="card"> 
+                    <div class="card-body">
+
+
+        
+        <%--MAIN CONTENT PAGE--%>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        <%--MAIN CONTENT PAGE--%>
+              </div>
+           </div>
+        </div>
+        </div>
+</div>
+        &nbsp;
+             <footer>
+       <div id="footer" class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+    <p>&copy All right Reserved..<a class="footerlinks" href="ContactUs.aspx" target="_blank" >Local Hire</a></p>
+    </div>
+    </div>
+    </div>
+       </footer>
+
+        
+    </form>
+</body>
+</html>

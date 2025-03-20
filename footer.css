@@ -1,0 +1,11 @@
+﻿.footerlinks {
+    color: #ff0000;
+}
+
+    .footerlinks:hover {
+        color: Yellow;
+    }
+
+#footer {
+    background-color: Teal;
+}
